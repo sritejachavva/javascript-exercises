@@ -26,9 +26,10 @@ function readInput(){
         temp_li.parentNode.removeChild(temp_li);
     }
 
-    
 
-    temp_button.addEventListener('click',deleteItem)
+
+    temp_button.addEventListener('click',deleteItem);
+    document.getElementById('item').focus();
 
 }
 
