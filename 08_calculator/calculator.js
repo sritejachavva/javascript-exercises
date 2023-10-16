@@ -1,20 +1,33 @@
-const add = function() {
-	
+const add = function(a,b) {
+	return a+b;
 };
 
-const subtract = function() {
-	
+const subtract = function(a,b) {
+	return a-b;
 };
 
-const sum = function() {
-	
+const sum = function(arr) {
+  reduced = function(total, curr){
+      return  total+curr;
+
+  }
+	return arr.reduce(reduced,0);
 };
 
-const multiply = function() {
-
+const multiply = function(arr) {
+  reduced_product = function(product, curr){
+    return product * curr;
+  }
+  return arr.reduce(reduced_product,1);
 };
 
-const power = function() {
+const power = function(a,b) {
+  let curr =1;
+  for (let i in Array.from(Array(b).keys())
+  ){
+      curr = curr*a;
+  }
+  return curr;
 	
 };
 
